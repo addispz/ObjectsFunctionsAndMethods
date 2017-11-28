@@ -2,7 +2,7 @@
 This module lets you practice correcting SYNTAX (notation) errors.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and Patrick Addis.
+         their colleagues and Patrick Addiss.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
