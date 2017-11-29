@@ -82,6 +82,7 @@ def main():
     turtle3()
     try_methods()
     try_functions()
+    try_methods_and_functions()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
@@ -257,8 +258,17 @@ def try_methods_and_functions():
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ####################################################################
+    def turtle5():
+        tom = rg.SimpleTurtle()
+        tom.pen = rg.Pen('blue', 5)
 
+        tom.backward(150)
 
+        tom.begin_fill()
+
+    turtle5()
+    turtle = rg.SimpleTurtle('square')
+    draw_many_squares(turtle, 2, 100, 30)
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
