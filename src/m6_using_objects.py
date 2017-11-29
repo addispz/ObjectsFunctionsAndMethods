@@ -14,6 +14,7 @@ import rosegraphics as rg
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
+    two_circles()
 
 
 def two_circles():
@@ -33,7 +34,25 @@ def two_circles():
     # Put a statement in   main   to test this function
     #    (by calling this function).
     # ------------------------------------------------------------------
+    width = 700
+    height = 400
+    window = rg.RoseWindow(width, height)
 
+    center_point1 = rg.Point(300, 100)
+    radius1 = 50
+    circle = rg.Circle(center_point1, radius1)
+    circle.fill_color = 'green'
+    circle.attach_to(window)
+
+    center_point2 = rg.Point(150,50)
+    radius2 = 20
+    circle2 = rg.Circle(center_point2,radius2)
+    circle2.attach_to(window)
+
+
+    window.render()
+
+    window.close_on_mouse_click()
 
 def circle_and_rectangle():
     """
