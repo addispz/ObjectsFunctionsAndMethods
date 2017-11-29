@@ -264,11 +264,28 @@ def try_methods_and_functions():
 
         tom.backward(150)
 
+        tom.speed = 1
+        turtle = rg.SimpleTurtle('square')
+        draw_many_squares(turtle, 2, 100, 30)
+
+        tom.speed = 5
+        tom.pen = rg.Pen('red',5)
+        draw_many_squares(turtle,10,50,15)
+
+        tom.speed = 100
+        tom.pen = rg.Pen('red',35)
+        draw_many_squares(turtle,8,300,60)
+
+        tom.pen = rg.Pen('black',3)
+
+        tom.backward(200)
+
+        tom.draw_circle(30)
+        tom.draw_square(50)
+
         tom.begin_fill()
 
     turtle5()
-    turtle = rg.SimpleTurtle('square')
-    draw_many_squares(turtle, 2, 100, 30)
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
