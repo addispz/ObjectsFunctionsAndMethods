@@ -248,7 +248,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -265,16 +265,15 @@ def try_methods_and_functions():
         tom.backward(150)
 
         tom.speed = 1
-        turtle = rg.SimpleTurtle('square')
-        draw_many_squares(turtle, 2, 100, 30)
+        draw_many_squares(tom, 2, 100, 30)
 
         tom.speed = 5
         tom.pen = rg.Pen('red',5)
-        draw_many_squares(turtle,10,50,15)
+        draw_many_squares(tom,10,50,15)
 
         tom.speed = 100
         tom.pen = rg.Pen('red',35)
-        draw_many_squares(turtle,8,300,60)
+        draw_many_squares(tom,8,300,60)
 
         tom.pen = rg.Pen('black',3)
 
