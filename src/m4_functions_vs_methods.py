@@ -80,6 +80,7 @@ def main():
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
+    try_methods()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
 
@@ -171,10 +172,22 @@ def try_methods():
       -- backward  100 units
     """
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
+    def turtle4():
+        bill = rg.SimpleTurtle()
+        bill.pen = rg.Pen('brown', 5)
+
+        bill.forward(150)
+        bill.left(90)
+        bill.forward(50)
+        bill.backward(100)
+
+        bill.begin_fill()
+
+    turtle4()
 
 
 def try_functions():
@@ -247,4 +260,3 @@ def try_methods_and_functions():
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
 main()
-
