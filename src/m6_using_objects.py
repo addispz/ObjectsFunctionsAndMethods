@@ -154,7 +154,7 @@ def lines():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     # ------------------------------------------------------------------
     width = 500
     height = 500
@@ -168,6 +168,10 @@ def lines():
     line1.attach_to(window)
 
     line1.get_midpoint()
+    print(line1.get_midpoint())
+    print(line1.get_midpoint().x)
+    print(line1.get_midpoint().y)
+
 
     window.render()
 
