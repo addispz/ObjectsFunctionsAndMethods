@@ -15,6 +15,8 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     two_circles()
+    circle_and_rectangle()
+    lines()
 
 
 def two_circles():
@@ -28,7 +30,7 @@ def two_circles():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this function, per its doc-string above.
+    # DONE: 2. Implement this function, per its doc-string above.
     #    -- ANY two rg.Circle objects that meet the criteria are fine.
     #    -- File  COLORS.txt  lists all legal color-names.
     # Put a statement in   main   to test this function
@@ -86,7 +88,7 @@ def circle_and_rectangle():
            150.0
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
@@ -94,6 +96,39 @@ def circle_and_rectangle():
     # IMPORTANT: Use the DOT TRICK to guess the names of the relevant
     #       instance variables for outline thickness, etc.
     # ------------------------------------------------------------------
+    width = 500
+    height = 500
+    window = rg.RoseWindow(width, height)
+
+    center_point1 = rg.Point(250, 150)
+    radius1 = 100
+    circle = rg.Circle(center_point1, radius1)
+    circle.fill_color = 'blue'
+    circle.attach_to(window)
+
+    window.render()
+
+    print(circle.outline_thickness)
+    print(circle.fill_color)
+    print(circle.center)
+    print(circle.center.x)
+    print(circle.center.y)
+
+    point1 = rg.Point(250, 250)
+    point2 = rg.Point(500, 350)
+    rectangle = rg.Rectangle(point1, point2)
+    rectangle.fill_color = 'red'
+    rectangle.attach_to(window)
+
+    window.render()
+
+    print(rectangle.outline_thickness)
+    print(rectangle.fill_color)
+    print(rectangle.get_center())
+    print(rectangle.get_center().x)
+    print(rectangle.get_center().y)
+
+    window.close_on_mouse_click()
 
 
 def lines():
